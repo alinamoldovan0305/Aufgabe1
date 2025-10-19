@@ -2,7 +2,7 @@ public class aufgabe1 {
 
     //Schreiben Sie eine Methode, die ein Array von Noten bekommen soll. Als
     //Rückgabewert soll die Methode ein Array mit nicht ausreichender Note liefern.
-    public static int [] nichtausreichendeNote(int [] noten){
+    public static int [] nichtausreichendeNoten(int [] noten){
         int anz=0;
         for(int i=0; i<noten.length; i++){
             if(noten[i]<40){
@@ -10,14 +10,16 @@ public class aufgabe1 {
             }
         }
 
-        int[] nichtausreichend= new int[anz];
+        int[] nichtausreichendeNoten= new int[anz];
+        int index = 0;
 
         for(int i=0; i<noten.length; i++){
             if(noten[i]<40){
-                nichtausreichend[i]=noten[i];
+                nichtausreichendeNoten[index]=noten[i];
+                index++;
             }
         }
-        return nichtausreichend;
+        return nichtausreichendeNoten;
     }
 
 

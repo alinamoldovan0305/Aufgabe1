@@ -1,1 +1,10 @@
+import java.util.Arrays;
 
+public class Main {
+    public static void main(String[] args) {
+        int[] noten={23, 48, 59, 78, 32};
+        //1-ter Subpunkt
+        int[] ergebnis=aufgabe1.nichtausreichendeNoten(noten);
+        System.out.println("Nicht ausreichende Noten: "+ Arrays.toString(ergebnis));
+    }
+}
