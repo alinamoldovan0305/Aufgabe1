@@ -13,5 +13,8 @@ public class Main {
         //3-ter Subpunkt
         System.out.println("Abgerundete Noten: "+Arrays.toString(aufgabe1.abgerundetenNoten(noten)));
 
+        //4-ter Subpunkt
+        System.out.println("Maximale abgerundete Note: "+aufgabe1.maximaleAbgerundeteNote(noten));
+
     }
 }

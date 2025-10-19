@@ -58,5 +58,15 @@ public class aufgabe1 {
         }
         return abgerundetenNoten;
     }
-
+    //Schreiben Sie eine Methode, die ein Array von Noten bekommen soll. Als
+    //Rückgabewert soll die Methode die maximal abgerundete Note liefern.
+        public static int maximaleAbgerundeteNote(int [] noten){
+            int max=0;
+            int[] abgerundet= abgerundetenNoten(noten);
+            for(int i=0; i<abgerundet.length; i++){
+                if(abgerundet[i]>max)
+                    max = abgerundet[i];
+        }
+        return max;
+    }
 }
