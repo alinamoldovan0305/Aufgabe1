@@ -22,5 +22,17 @@ public class aufgabe1 {
         return nichtausreichendeNoten;
     }
 
+    //Schreiben Sie eine Methode, die ein Array von Noten bekommen soll. Als
+    //Rückgabewert soll die Methode den Durchschnittswert liefern.
+    public static double durchschnittwert(int [] noten){
+        int anz=0;
+        int sum=0;
+        for(int i=0; i<noten.length; i++){
+            anz++;
+            sum+=noten[i];
+        }
+        return sum/anz;
+
+    }
 
 }
